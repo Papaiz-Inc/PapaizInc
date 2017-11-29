@@ -1,14 +1,14 @@
 ﻿@model PapaizInc.Models.Funcionario
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Excluir";
 }
 
-<h2>Delete</h2>
+<h2>Excluir</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Você tem certeza que deseja excluir isso?</h3>
 <div>
-    <h4>Funcionario</h4>
+    <h4>Funcionário</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -30,13 +30,13 @@
             @Html.DisplayFor(model => model.Identidade)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.CarteiraDeTrabalho)
+            Carteira de Trabalho
         </dt>
         <dd>
             @Html.DisplayFor(model => model.CarteiraDeTrabalho)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Salario)
+            Salário
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Salario)
@@ -48,13 +48,13 @@
             @Html.DisplayFor(model => model.Motorista)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Tecnico)
+            Técnico
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Tecnico)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Observacoes)
+            Observações
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Observacoes)
@@ -63,7 +63,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Excluir" class="btn btn-default" /> |
+        <a asp-action="Index">Voltar para a lista</a>
     </form>
 </div>

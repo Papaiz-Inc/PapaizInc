@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<PapaizInc.Models.Funcionario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Funcionários";
 }
 
-<h2>Index</h2>
+<h2>Funcionários</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Cadastrar Funcionário</a>
 </p>
 <table class="table">
     <thead>
@@ -22,19 +22,19 @@
                     @Html.DisplayNameFor(model => model.Identidade)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.CarteiraDeTrabalho)
+                    Carteira de Trabalho
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Salario)
+                    Salário
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Motorista)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Tecnico)
+                    Técnico
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Observacoes)
+                    Observações
                 </th>
             <th></th>
         </tr>
@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.Observacoes)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ID"><span title="Editar" class="glyphicon glyphicon-edit"></span></a> |
+                <a asp-action="Details" asp-route-id="@item.ID"><span title="Detalhes" class="glyphicon glyphicon-list"></span></a> |
+                <a asp-action="Delete" asp-route-id="@item.ID"><span title="Excluir" class="glyphicon glyphicon-trash"></span></a>
             </td>
         </tr>
 }
